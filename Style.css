@@ -1,0 +1,708 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+::selection {
+    background-color: red;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+/*loading-bg*/
+#loading_bg {
+    width: 100%;
+    position: relative;
+    display: none;
+}
+
+#loading_bg > image {
+    width: 100%;
+}
+/*header*/
+header {
+    position: absolute;
+}
+/* #header_container_1 */
+#header_container_1, #header_container_2 {
+    display: flex;
+    padding: 10px 0px 0px;
+    color: white;
+    background-color: transparent;
+}
+
+#header_container_1 > div {
+    padding: 10px;
+}
+
+#header_container_1 > div:nth-child(3) {
+    margin-left: auto;
+}
+
+#header_container_1 > div:first-child {
+    padding-left: 100px;
+}
+
+div#link_media {
+    padding-right: 100px;
+    display: flex;
+}
+
+#header_container_1 > div a {
+    color: white;
+    padding-left: 10px;
+}
+
+#header_container_1 > div a:hover {
+    animation-name: toRed;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+/* #header_container_2 */
+#header_container_2 > div > ul {
+    display: flex;
+}
+
+#header_container_2 > div ul {
+    list-style-type: none;
+}
+
+#header_container_2 > div > ul > li:not(#quick_find) {
+    padding-right: 25px;
+    position: relative;
+}
+
+#header_container_2 > div > ul > li:last-child > div#close {
+    display: none;
+}
+
+#header_container_2 > div > ul > li > div:first-child {
+    padding: 0px 5px 30px 0px;
+    width: max-content;
+}
+
+#header_container_2 > div >  img {
+    width: 40%;
+    padding-left: 90px;
+}
+
+#header_container_2 > div:last-child     {
+    margin-left: auto;
+    margin-right: 90px;
+}
+
+#header_container_2 .contents .subcontent {
+    position: absolute;
+    display: none;
+    background-color: white;
+    min-width: 200px;
+}
+
+#header_container_2 .contents > ul > li:nth-last-child(2) .subcontent, #header_container_2 .contents > ul > li:last-child .subcontent {
+    right: 5%;
+}
+
+#header_container_2 .contents .subcontent a {
+    color: black;
+    display: block;
+    padding: 10px;
+}
+
+#header_container_2 > .contents > ul > li:not(#quick_find):hover .subcontent {
+    display: block;
+    z-index: 1;
+    opacity: 0;
+    animation-name: hienRa;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+}
+
+#header_container_2 .contents .subcontent li:hover {
+    animation: toRgb241_240_247 0.5s forwards;
+}
+
+#header_container_2 #quick_find #search_box {
+    display: flex;
+    z-index: 1;
+}
+
+#header_container_2 #quick_find #search_box > div {
+    padding: 10px;
+}
+
+input[type=button] {
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    font-size: large;
+    display: block;
+    text-align: center;
+    background-image: linear-gradient(to bottom, red 50%, black 50%);
+    background-size: 100% 200%;
+}
+
+input[type=button]:hover {
+    animation: changeButtonColor 0.7s forwards;
+}
+
+#header_container_2 #quick_find #search_box > div > select {
+    padding: 10px 25px;
+    font-size: large;
+    border: 1px solid silver ;
+}
+
+@keyframes toRed {
+    from {color: white;}
+    to {color: red;}
+}
+
+@keyframes toRgb241_240_247 {
+    from {background-color: white;}
+    to {background-color: rgb(241, 240, 247);}
+}
+
+@keyframes hienRa {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes changeButtonColor {
+    0% {background-position: 0 0%}
+    70% {background-position: 0 97%}
+    85% {background-position: 0 85%}
+    100% {background-position: 0 100%}
+}
+
+#header_container_2 > div > ul > li > div a:hover {
+    animation-name: toRed;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+/*video bg*/
+#video_bg {
+    pointer-events: none;
+}
+
+.video_bg {
+    position: relative;
+    top: 0px;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+/*gototop*/
+#gototop {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 100px;
+    z-index: 1;
+}
+
+#gototop img {
+    width: 100%;
+}
+/*content_search*/
+.row {
+    display: flex;
+    margin: 5px;
+    flex-wrap: wrap;
+}
+/*col_content*/
+.col_content {
+    width: 65%;
+}
+
+.content_container {
+    padding: 15px;
+}
+
+.tittle {
+    font-size: x-large;
+}
+
+.content {
+    color: rgb(148, 145, 145);
+}
+
+.content > h2 {
+    color: red;
+    font-size: 100px  ;
+    display: table-cell;
+}
+
+.content > strong {
+    font-weight: bolder;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.col_feature {
+    display: flex;
+    width: 50%;
+}
+
+.icons {
+    font-size: 40px;
+    padding: 15px;
+    margin: 5px;
+}
+
+.icons ~ div {
+    font-size: 20px;
+}
+
+.icons ~ div {
+    margin: auto;
+    margin-left: 10px;
+}
+
+.col_feature .icons:hover {
+    border: 0px solid red;
+    background-color: red;
+    color: white;
+    border-radius: 50px;
+}
+/*col_search*/
+.col_search {
+    width: 35%;
+    border: 1px solid silver;
+}
+
+.search_here {
+    margin: 10px;
+    padding: 10px;
+    background-color: red;
+    text-align: center;
+    color: white;
+}
+
+.col_select {
+    width: 50%;
+    font-size: larger;
+    text-align: left;
+    color: rgb(93 86 86);
+    padding: 15px;
+}
+
+.col_select:last-child {
+    width: 100%;
+    font-size: larger;
+    text-align: left;
+    color: rgb(93 86 86);
+    padding: 15px;
+}
+
+.col_select select, input   {
+    width: 70%;
+    font-size: large;
+    text-align: left;
+    border-radius: 0%;
+    border: 1px solid silver;
+    padding: 10px;
+}
+
+.col_select select, input[type=button]   {
+    margin: auto;
+    width: 100%;
+}
+
+.col_select #slider_container{
+    height: 5px;
+    margin: 15px 0px;
+    position: relative;
+}
+
+.col_select .slider {
+    background-color: red;
+    height: 100%;
+    width: 90%;
+    margin: auto;
+}
+
+#slider_container > span {
+    padding: 5px;
+    position: absolute;
+    top: -17px;
+    cursor: pointer;
+    height: 100%;
+    width: 0%;
+}
+
+#handle2 {
+    left: 30%;
+}
+
+#slider_container svg {
+    width: 30px;
+    height: 30px;
+}
+
+/*lastnew*/
+#lastnew {
+    background-image: url(icon/hypersports-do-lykan-hinh-nen-3840x1280_105.jpg);
+    background-size: 150%;
+    background-position: 50% 50%;
+    width: 100%;
+}
+
+#lastnew_content {
+    width: 40%;
+    height: 24rem;
+    margin-left: auto;
+    background-color: black;
+    opacity: 0.8;
+    color: white;
+    padding: 2rem;
+}
+
+#lastnew_content h5{
+    font-size: 1rem;
+}
+
+#lastnew_content h3{
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.sperator_upper {
+    height: 1px;
+    background-color: red;
+    margin: 0.5rem;
+    width: 30%;
+    transition: all 0.7s;
+}
+
+.sperator_under {
+    height: 1px;
+    background-color: red;
+    margin: 0.5rem;
+    width: 50%;
+    transition: all 0.7s;
+}
+
+#lastnew:hover .sperator_upper {
+    width: 50%;
+}
+
+#lastnew:hover .sperator_under {
+    width: 30%;
+}
+
+#lastnew_content #news > div > a {
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.5rem 2rem;
+}
+
+#lastnew_content #news a:hover{
+    transition: all 0.7s;
+    font-size: 1.5rem;
+    background-color: red;
+}
+
+/*shared_tittle*/
+.shared_tittle > div > p {
+    color: rgb(124, 121, 121);
+    text-align: center;
+    font-size: 1rem;
+    margin: 1rem 0rem;
+}
+
+.shared_tittle > div.rv_tittle {
+    font-weight: 700;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.shared_tittle > div.sperator {
+    width: 30%;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+.shared_tittle div.sperator_upper, .shared_tittle div.sperator_under {
+    margin: auto;
+    margin: 0.5rem auto;
+}
+
+.shared_tittle:hover .sperator_upper {
+    width: 50%;
+}
+
+.shared_tittle:hover .sperator_under {
+    width: 30%;
+}
+
+/*img_vehicle menu*/
+#img_vehicle .menu a {
+    color: black;
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    border-bottom: 0.2rem solid white;
+    transition: all 0.7s;
+}
+
+#img_vehicle .menu > div {
+    margin: 0rem 0.2rem 1.5rem 0.2rem;
+}
+
+#img_vehicle .menu a.checking {
+    border-bottom: 0.2rem solid red;
+    color: red;
+}
+
+#img_vehicle .menu a.checked {
+    border-bottom: 0.2rem solid red;
+    color: red;
+}
+
+#img_vehicle .menu {
+    justify-content: center;
+}
+
+/*img_vehicle img_menu*/
+.img_menu > div {
+    width: 30%;
+    position: relative;
+    margin: 1%;
+    padding: 1%;
+    height: 168px;
+    overflow: hidden;
+}
+
+.img_menu #car_img {
+    width: 100%;
+}
+
+.img_menu #popup {
+    text-align: center;
+    padding: 0.3rem;
+    position: absolute;
+    width: 100%;
+    top: -30%;
+}
+
+.img_menu #popup i {
+    border: 1px;
+    padding: 0.5rem;
+    border-radius: 50px;
+    background-color: white;
+    color: red;
+}
+
+.img_menu #popup i:hover {
+    background-color: red;
+    color: white; 
+}
+
+.img_menu #detail {
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 0.3rem;
+    position: absolute;
+    width: 100%;
+}
+
+.img_menu #detail h3, .img_menu #detail h5 {
+    padding: 0.2rem;
+    cursor: default;
+}
+
+/*popup*/
+#popup_container, #verify{
+    position: fixed;
+    z-index: 3;
+    height:  100%;
+    width: 100%;
+    display: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+#popup_img, #verify > div {
+    height: 50%;
+    display: block;
+    position: relative;
+    margin: auto;
+    top: 25%;
+}
+
+/*our_places*/
+.place_info {
+    width: 30%; 
+    padding: 0.3rem;
+    margin: auto;
+    color: #000;
+    border: 0.1px solid rgb(219, 215, 215);
+    border-radius: 2rem;
+    margin-top: 0;
+}
+
+.place_info > h3, .place_info > h6, .place_info > div {
+    padding: 0.3rem ;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.place_info > h3 {
+    font-size: 1.5rem;
+}
+
+.place_info > img {
+    width: 100%;
+}
+
+.place_info > div > a {
+    display: block;
+    width: 100%;
+    color: #000;
+    transition: color 0.5s;
+}
+
+.place_info > div > a:hover {
+    color: #ff0000;
+}
+
+#our_places_footer img {
+    width: 100%;
+}
+
+#footer {
+    background-image: url("icon/footerbg.jpg");
+    background-size: cover;
+}
+/*footer social*/
+
+#social  {
+    padding-bottom: 2rem;
+    margin-bottom: 0%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#social > div {
+    width: 23%;
+    display: flex;
+    margin: auto;
+    font-size: xx-large;
+    padding: 1rem;
+    cursor: pointer;
+    text-transform: capitalize;
+    color: white;
+}
+
+#social > div > i {
+    margin-left: auto;
+    margin-right: 15%;
+}
+
+#fb:hover {
+    background-image: linear-gradient(to bottom, #8cd7ff,#0166e1);
+}
+
+#tw:hover {
+    background-color: rgb(29 155 240);
+}
+
+#yt:hover {
+    background-color: #ff0000;
+}
+
+#ins:hover {
+    background-image: linear-gradient(to left bottom, #b809b5, red , yellow);
+}
+
+/*footer footer_info*/
+
+#footer_info {
+    color: white;
+    margin-top: 0%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#footer_info > div {
+    width: 23%;
+    padding: 0.5rem;
+    margin: auto;
+    margin-top: 0%;
+}
+
+#footer_info > div > h3, #footer_info > div > div > div:not(.sperator) {
+    padding: 1rem;
+}
+
+#footer_info > div i {
+    padding-right: 0.5rem;
+}
+
+.link > div > div:not(.sperator, .link > div > div:last-child) {
+    border-bottom: 1px solid gray;
+}
+
+.link > div > div:not(.sperator):hover {
+    animation: toRed 0.7s forwards;
+    cursor: default;
+}
+
+.link img {
+    width: 30%;
+    display: block;
+}
+
+.link img ~ div{
+    width: 60%;
+    margin-left: auto;
+}
+
+.link .sperator_upper, .link .sperator_under {
+    margin: 0.5rem 0rem;
+}
+
+.link:hover .sperator_upper {
+    width: 50%;
+}
+
+.link:hover .sperator_under {
+    width: 30%;
+}
+
+/*email*/
+
+#email p, #email input {
+    margin: 1rem;
+    width: 100%;
+}
+
+#email input[type=email] {
+    background-color: transparent;
+}
+
+#email input[type=email]:focus {
+    background-color: white;
+}
+
+/*verify*/
+
+#verify > div {
+    text-align: center;
+    width: 70%;
+}
+
+#verify > div > input[type=button] {
+    width: 30%;
+}
+
+#verify input, #verify p{
+    margin: 1rem auto;
+    text-align: center;
+}

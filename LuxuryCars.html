@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="mua xe, xe hoi, car, luxury car, sieu xe">
+    <meta name="description" content="Mua bán xe sang">
+    <title>LuxuryCars</title>
+    <link rel="shortcut icon" href="icon/icon(1).png">
+    <link rel="stylesheet" href="style.css">
+    <!--fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--css style-->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!--jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="handle.js"></script>
+</head>
+<body>
+    <div id="popup_container">
+        <img src="CarsImages/bentley/Bentley-continental.jpg" alt="car" id="popup_img">
+    </div>
+    <div id="verify">
+        <div>
+            <p>Enter your verify code here.(123456)</p>
+            <input type="number" name="verify" id="verify_code">
+            <input type="button" value="Verify">
+        </div>
+    </div>
+    <div id="loading_bg">
+        <img src="icon/f26b2e1f9956deb26e22d626aa378bbb.gif" alt="Loading page">
+    </div>
+    <header id="header">
+        <div id="header_container_1">
+            <div>
+                <i class="far fa-envelope"></i>
+                loibui489@gmail.com
+            </div>
+            <div>
+                <i class="far fa-clock"></i>
+                Mon - Sar 8:00 - 18:00. Closed on Sunday
+            </div>
+            <div>
+                <i class="fas fa-mobile-alt"></i>
+                0909090909
+            </div>
+            <div id="link_media">
+                <div><a href="https://www.facebook.com/loi.bui.750331" target="blank"><i class="fab fa-facebook"></i></a></div>
+                <div><a href="https://twitter.com/?lang=vi" target="blank"><i class="fab fa-twitter-square"></i></a></div>
+                <div><a href="https://www.youtube.com/" target="blank"><i class="fab fa-youtube-square"></i></a></div>
+                <div><a href="https://www.instagram.com/" target="blank"><i class="fab fa-instagram-square"></i></a></div>
+            </div>
+        </div>
+
+        <div id="header_container_2">
+            <div>
+                <img src="icon/5576.png" alt="LOGO">
+            </div>
+            <div  class="contents">
+                <ul>
+                    <li>
+                        <div><a href="javascript:;">Home<i class="fas fa-chevron-down"></i></a></div>
+                        <div class="subcontent">
+                            <ul>
+                                <li style="padding: 0px;"><div style="width: 100%; height: 5px; background-color: red;"></div></li>
+                                <li><a href="#">Car service</a></li>
+                                <li><a href="#">Car directory</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div><a href="javascript:;">Pages <i class="fas fa-chevron-down"></i></a></div>
+                        <div class="subcontent">
+                            <ul>
+                                <li style="padding: 0px;"><div style="width: 100%; height: 5px; background-color: red;"></div></li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Login</a></li>
+                                <li><a href="#">Register</a></li>
+                                <li><a href="#">Coming soon</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div><a href="javascript:;">Blog <i class="fas fa-chevron-down"></i></a></div>
+                        <div class="subcontent">
+                            <ul>
+                                <li style="padding: 0px;"><div style="width: 100%; height: 5px; background-color: red;"></div></li>
+                                <li><a href="#">Nothing here</a></li>
+                                <li><a href="#">I don't know what to write here</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div><a href="javascript:;">Cars List <i class="fas fa-chevron-down"></i></a></div>
+                        <div class="subcontent">
+                            <ul>
+                                <li style="padding: 0px;"><div style="width: 100%; height: 5px; background-color: red;"></div></li>
+                                <li><a href="Carlisting/Luxury.html">Luxurious Cars</a></li>
+                                <li><a href="#">Super Cars</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div><a href="javascript:;">Contact <i class="fas fa-chevron-down"></i></a></div>
+                        <div class="subcontent">
+                            <ul>
+                                <li style="padding: 0px;"><div style="width: 100%; height: 5px; background-color: red;"></div></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Give feedbacks</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li id="quick_find">
+                        <div id="open"><a href="javascript:;"><i class="fas fa-search"></i></a></div>
+                        <div id="close"><a href="javascript:;"><i class="fas fa-times"></i></a></div>
+                        <div class="subcontent">
+                            <div style="width: 100%; height: 5px; background-color: red;"></div>
+                            <div id="search_box">
+                                <div>
+                                    <select name="Brand" id="">
+                                        <option value="">Brand</option>
+                                        <option value="">Bentley</option>
+                                        <option value="">Roll Royce</option>
+                                        <option value="">Ferrari</option>
+                                        <option value="">W-motor</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <select name="Model" id="">
+                                        <option value="">Model</option>
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <select name="Year" id="">
+                                        <option value="">Year</option>
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <select name="Style" id="">
+                                        <option value="">Style</option>
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <select name="Status" id="">
+                                        <option value="">Status</option>
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <input type="button" value="Search">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="video_bg">
+        <div id="video_bg">
+            <iframe width="100%" height="700px" 
+                src="https://www.youtube.com/embed/KZBIj7zFJrw?controls=0&autoplay=1&hd=1&mute=1&loop" 
+                title="YouTube video player" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+            </iframe>    
+        </div>
+    </section>
+    <div id="gototop">
+        <a href="javascript:;"><img src="icon/—Pngtree—red car top view icon_6587097.png" alt=""></a>
+    </div>
+    <section class="content_search" style="background-color: white;">
+        <div class="row">
+            <div class="col_content">
+                <div class="content_container">
+                    <div class="tittle">
+                        <h3>Somethings about Luxury Cars</h3>
+                    </div>
+                    <div class="content">
+                        <h2>10</h2>
+                        <strong>years of experience in selling luxury cars, hyper sport cars !</strong>
+                        <p>
+                            In here, we have the most modern, <strong>luxury cars</strong>. Beside that, we have good hyper <strong>sport cars</strong> for people who want excitement driving.
+                            Come here and Elevate your life !
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col_feature">
+                        <div class="icons">
+                            <i class="fas fa-tag"></i>
+                        </div>
+                        <div>
+                            <h5>Discount</h5>
+                            <p>For member</p>
+                        </div>
+                    </div>
+                    <div class="col_feature">
+                        <div class="icons">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <div>
+                            <h5>Free support</h5>
+                            <p>For everyone</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col_feature">
+                        <div class="icons">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <div>
+                            <h5>Dealerships</h5>
+                            <p>All around the world</p>
+                        </div>
+                    </div>
+                    <div class="col_feature">
+                        <div class="icons">
+                            <i class="fas fa-wallet"></i>
+                        </div>
+                        <div>
+                            <h5>Affordable</h5>
+                            <p>Cheapest</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col_search">
+                <div>
+                    <div class="search_here">
+                        <h3 class="tittle">
+                            <i class="fas fa-search"></i>
+                            Search here
+                        </h3>
+                    </div>
+                    <div class="row">
+                        <div class="col_select">
+                            <span>Select brand</span>
+                            <div>
+                                <select name="Brand" id="">
+                                    <option value="">Brand</option>
+                                    <option value="">Bentley</option>
+                                    <option value="">Roll Royce</option>
+                                    <option value="">Ferrari</option>
+                                    <option value="">W-motor</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col_select">
+                            <span>Select model</span>
+                            <div>
+                                <select name="Model" id="">
+                                    <option value="">Model</option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col_select">
+                            <span>Select year</span>
+                            <div>
+                                <select name="Year" id="">
+                                    <option value="">Year</option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col_select">
+                            <span>Select style</span>
+                            <div>
+                                <select name="Style" id="">
+                                    <option value="">Style</option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col_select">
+                            <span>Select status</span>
+                            <div>
+                                <select name="Status" id="">
+                                    <option value="">Status</option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col_select">
+                            <span>Select mileages</span>
+                            <div>
+                                <input type="number" name="mileages" id="" step="50" min="0">
+                            </div>
+                        </div>
+                        <div class="col_select">
+                            <span>Price range</span>
+                            <h5>...</h5>
+                            <div id="slider_container">
+                                <div class="slider">
+                                </div>
+                                <span id="handle1">
+                                    <svg>
+                                        <circle cx="15" cy="15" r="10" stroke="red" stroke-width="1" fill="white" />
+                                    </svg>
+                                </span>
+                                <span id="handle2"> 
+                                    <svg>
+                                        <circle cx="15" cy="15" r="10" stroke="red" stroke-width="1" fill="white" />
+                                    </svg>
+                                </span>
+                            </div>
+                            <input type="button" value="Search">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="lastnew">
+        <div id="lastnew_content">
+            <div>
+                <h5>Read our lastest news</h5>
+                <h3>LASTEST NEWS</h3>
+                <div class="sperator">
+                    <div class="sperator_upper"></div>
+                    <div class="sperator_under"></div>
+                </div>
+                <div id="news">
+                    <div><a href="javascript:;">New cars coming up</a></div>
+                    <div><a href="javascript:;">Old car liquidation sale</a></div>
+                    <div><a href="javascript:;">New car service</a></div>
+                    <div><a href="javascript:;">New cars coming up</a></div>
+                    <div><a href="javascript:;">Old car liquidation sale</a></div>
+                    <div><a href="javascript:;">New car service</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="recent_vehicle, shared_tittle">
+        <div>
+            <p>Check out our recent car</p>
+        </div>
+        <div class="rv_tittle">RECENT VEHICLE</div>
+        <div class="sperator">
+            <div class="sperator_upper"></div>
+            <div class="sperator_under"></div>
+        </div>
+
+        <div id="img_vehicle">
+            <div class="row menu">
+                <div><a class="checked" href="javascript:;" rel="All">All</a></div>
+                <div><a href="javascript:;" rel="BENTLEY">BENTLEY</a></div>
+                <div><a href="javascript:;" rel="ROLLSROYCE">ROLLS ROYCE</a></div>
+                <div><a href="javascript:;" rel="FERRARI">FERRARI</a></div>
+                <div><a href="javascript:;" rel="W-MOTOR">W-MOTOR</a></div>
+            </div>
+            <div class="row img_menu">
+                <div class="bentley">
+                    <img id="car_img" src="CarsImages/bentley/Bentley Continental.jpg" alt="Bentley Continental">
+                    <div id="popup">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                    <div id="detail">
+                        <h3 id="car_name">
+                            Bentley Continental
+                        </h3>
+                        <h5 id="car_price">
+                            $915.000
+                        </h5>
+                    </div>
+                </div>
+                <div class="w-motor">
+                    <img id="car_img" src="CarsImages/w-motor/Fenyr Super Sport.jpg" alt="Fenyr Super Sport">
+                    <div id="popup">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                    <div id="detail">
+                        <h3 id="car_name">
+                            Fenyr Super Sport
+                        </h3>
+                        <h5 id="car_price">
+                            $2.0m
+                        </h5>
+                    </div>
+                </div>
+                <div class="ferrari">
+                    <img id="car_img" src="CarsImages/ferrari/Ferrari Roma.jpg" alt="Ferrari Roma">
+                    <div id="popup">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                    <div id="detail">
+                        <h3 id="car_name">
+                            Ferrari Roma
+                        </h3>
+                        <h5 id="car_price">
+                            $910.000
+                        </h5>
+                    </div>
+                </div>
+                <div class="rollsroyce">
+                    <img id="car_img" src="CarsImages/rollsroyce/Rollsroyce Wraith.jpg" alt="rollsroyce-wraith">
+                    <div id="popup">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                    <div id="detail">
+                        <h3 id="car_name">
+                            Rollsroyce Wraith
+                        </h3>
+                        <h5 id="car_price">
+                            $1.45m
+                        </h5>
+                    </div>
+                </div>
+                <div class="rollsroyce">
+                    <img id="car_img" src="CarsImages/rollsroyce/Rollsroyce Ghost.jpg" alt="Rollsroyce Ghost">
+                    <div id="popup">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                    <div id="detail">
+                        <h3 id="car_name">
+                            Rollsroyce Ghost
+                        </h3>
+                        <h5 id="car_price">
+                            $1.4m
+                        </h5>
+                    </div>
+                </div>
+                <div class="rollsroyce">
+                    <img id="car_img" src="CarsImages/rollsroyce/Rollsroyce Phantom VIII.jpg" alt="Rollsroyce Phantom VIII">
+                    <div id="popup">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                    <div id="detail">
+                        <h3 id="car_name">
+                            Rollsroyce Phantom VIII
+                        </h3>
+                        <h5 id="car_price">
+                            $2.5m
+                        </h5>
+                    </div>
+                </div>
+                <div class="bentley">
+                    <img id="car_img" src="CarsImages/bentley/Bentley Mulsanne.jpg" alt="Bentley Mulsanne">
+                    <div id="popup">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                    <div id="detail">
+                        <h3 id="car_name">
+                            Bentley Mulsanne
+                        </h3>
+                        <h5 id="car_price">
+                            $1.0m
+                        </h5>
+                    </div>
+                </div>
+                <div class="bentley">
+                    <img id="car_img" src="CarsImages/bentley/Bentley Flying Spur.jpg" alt="Bentley Flying Spur">
+                    <div id="popup">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                    <div id="detail">
+                        <h3 id="car_name">
+                            Bentley Flying Spur
+                        </h3>
+                        <h5 id="car_price">
+                            $1.3m
+                        </h5>
+                    </div>
+                </div>
+                <div class="w-motor">
+                    <img id="car_img" src="CarsImages/w-motor/Lykan Hyper Sport.jpg" alt="Lykan Hyper Sport">
+                    <div id="popup">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                    <div id="detail">
+                        <h3 id="car_name">
+                            Lykan Hyper Sport
+                        </h3>
+                        <h5 id="car_price">
+                            $1.5m
+                        </h5>
+                    </div>
+                </div>
+                <div class="ferrari">
+                    <img id="car_img" src="CarsImages/ferrari/Ferrari Portofino.jpg" alt="Ferrari Portofino">
+                    <div id="popup">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                    <div id="detail">
+                        <h3 id="car_name">
+                            Ferrari Portofino
+                        </h3>
+                        <h5 id="car_price">
+                            $740.000
+                        </h5>
+                    </div>
+                </div>
+                <div class="ferrari">
+                    <img id="car_img" src="CarsImages/ferrari/Ferrari California T.jpg" alt="Ferrari California T">
+                    <div id="popup">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                    <div id="detail">
+                        <h3 id="car_name">
+                            Ferrari California T
+                        </h3>
+                        <h5 id="car_price">
+                            $650.000
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="our_places, shared_tittle">
+        <div>
+            <p>World wide clients</p>
+        </div>
+        <div class="rv_tittle">OUR PLACES</div>
+        <div class="sperator">
+            <div class="sperator_upper"></div>
+            <div class="sperator_under"></div>
+        </div>
+
+        <div class="row">
+            <div class="place_info">
+                <h3>Vinhome Central Park</h3>
+                <h6>Đ. Tân Cảng, Phường 25, Bình Thạnh, Thành phố Hồ Chí Minh, Việt Nam</h6>
+                <img src="PlacesImages/Vinhome Central Park.jpg" alt="Vinhome Central Park">
+                <div><a href="https://goo.gl/maps/WvutsKqXkhU4Ccqo7" target="blank">Xem bảng đồ</a></div>
+            </div>
+            <div class="place_info">
+                <h3>Phu My Hung</h3>
+                <h6>Nguyễn Khắc Viện, Tân Phú, Quận 7, Thành phố Hồ Chí Minh, Việt Nam</h6>
+                <img src="PlacesImages/Phu My Hung.jpg" alt="Phu My Hung">
+                <div><a href="https://goo.gl/maps/YiyaHwxsmpgVXWG48" target="blank">Xem bảng đồ</a></div>
+            </div>
+            <div class="place_info">
+                <h3>Masteri Thao Dien</h3>
+                <h6>Đ. Song Hành Xa Lộ Hà Nội, Thảo Điền, Quận 2, Thành phố Hồ Chí Minh, Việt Nam</h6>
+                <img src="PlacesImages/Masteri Thao Dien.jpg" alt="Masteri Thao Dien">
+                <div><a href="https://goo.gl/maps/5pVyxPmkPixrVoWGA" target="blank">Xem bảng đồ</a></div>
+            </div>
+        </div>
+
+        <div id="our_places_footer">
+            <img src="http://themes.potenzaglobalsolutions.com/html/cardealer/images/objects/08.png" alt="img">
+        </div>
+    </section>
+    <footer id="footer">
+        <div id="social" class="row">
+            <div id="fb">
+                <h6>facebook</h6>
+                <i class="fab fa-facebook-f"></i>
+            </div>
+            <div id="tw">
+                <h6>twitter</h6>
+                <i class="fab fa-twitter"></i>
+            </div>
+            <div id="yt">
+                <h6>youtube</h6>
+                <i class="fab fa-youtube"></i>
+            </div>
+            <div id="ins">
+                <h6>instagram</h6>
+                <i class="fab fa-instagram"></i>
+            </div>
+        </div>
+
+        <div id="footer_info" class="row">
+            <div>
+                <h3>We bring to you the most luxurious car in the world</h3>
+                <div>
+                    <div>
+                        <i class="far fa-envelope"></i>
+                        loibui489@gmail.com
+                    </div>
+                    <div>
+                        <i class="fas fa-mobile-alt"></i>
+                        0909090909
+                    </div>
+                    <div>
+                        <i class="fas fa-map-marker-alt"></i>
+                        Đ. Tân Cảng, Phường 25, Bình Thạnh, Thành phố Hồ Chí Minh, Việt Nam
+                    </div>
+                </div>
+            </div>
+            <div class="link">
+                <div>
+                    <p>Useful link</p>
+                    <div class="sperator">
+                        <div class="sperator_upper"></div>
+                        <div class="sperator_under"></div>
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <i class="fas fa-angle-double-right"></i>
+                        Change Oil and Filter
+                    </div>
+                    <div>
+                        <i class="fas fa-angle-double-right"></i>
+                        Brake Pads Replacement
+                    </div>
+                    <div>
+                        <i class="fas fa-angle-double-right"></i>
+                        Timing Belt Replacement
+                    </div>
+                    <div>
+                        <i class="fas fa-angle-double-right"></i>
+                        Pre-purchase Car Inspection
+                    </div>
+                    <div>
+                        <i class="fas fa-angle-double-right"></i>
+                        Starter Replacement
+                    </div>
+                </div>
+            </div>
+            <div class="link">
+                <div>
+                    <p>Recent post</p>
+                    <div class="sperator">
+                        <div class="sperator_upper"></div>
+                        <div class="sperator_under"></div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="row">
+                        <img src="Carsimages/bentley/Bentley Continental.jpg" alt="icon">
+                        <div>
+                            <h4>New Bentley coming up !!!</h4>
+                            <i class="far fa-calendar-alt"></i>
+                            10/06/2021
+                        </div>
+                    </div>
+                    <div  class="row">
+                        <img src="Carsimages/w-motor/Fenyr Super Sport.jpg" alt="icon">
+                        <div>
+                            <h4>Limited car from Dubai</h4>
+                            <i class="far fa-calendar-alt"></i>
+                            20/08/2021
+                        </div>
+                    </div>
+                    <div  class="row">
+                        <img src="Carsimages/ferrari/Ferrari Portofino.jpg" alt="icon">
+                        <div>
+                            <h4>Old Ferrari now has new apperance !!!</h4>
+                            <i class="far fa-calendar-alt"></i>
+                            02/09/2021
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="link">
+                <div>
+                    <p>SUBSCRIBE OUR NEWSLETTER</p>
+                    <div class="sperator">
+                        <div class="sperator_upper"></div>
+                        <div class="sperator_under"></div>
+                    </div>
+                </div>
+
+                <div id="email">
+                    <p>Keep up on our always evolving products features and technology. Enter your e-mail and subscribe to our newsletter.</p>
+
+                    <input type="email" name="user_email" id="user_email" placeholder="Enter your email ...">
+
+                    <input type="button" value="SUBSCRIBE">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="gototop"></div>
+</body>
+</html>

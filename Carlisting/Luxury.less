@@ -1,0 +1,13 @@
+#colors() {
+    primary: blue;
+    secondary: green;
+  }
+.hello {
+    color: #colors()[secondary];
+    font-size: 5rem;
+
+    .world {
+        color: red;
+        font-size: 6rem;
+    }
+}
